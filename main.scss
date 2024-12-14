@@ -1,0 +1,113 @@
+@import "scss/mixin";
+@import "scss/variable";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+//   outline: 1px solid white;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: #302c42;
+  width: 100%;
+  height: 100vh;
+  padding: 5rem 8.4rem;
+
+  .header {
+    width: 100%;
+    margin-inline: auto;
+    // border: 1px solid white;
+    .header_navbar {
+        // border: 1px solid red;
+        width: 100%;
+      @include d-flex(center, space-between, _, _);
+
+      .header_navbar_logo {
+        @include d-flex(center, space-between, _, _);
+        width: 19.3rem;
+        .header_navbar_logo_img {
+          width: 10.2rem;
+          height: 10.3rem;
+          object-fit: cover;
+        }
+        .header_navbar_logo_name {
+          width: 7.6rem;
+          height: 4.6rem;
+          object-fit: cover;
+        }
+      }
+
+      .header_navbar_menu {
+        width: 39rem;
+        @include d-flex(center, space-between, _, _);
+
+        .header_navbar_menu_item {
+          .header_navbar_menu_item_link {
+            @include font-style($--primary-color,1.2rem, 700, 1.4rem);
+          }
+        }
+      }
+
+      .header_navbar_button {
+        width: 34.7rem;
+        @include d-flex(center, space-between, _, _);
+
+        .header_navbar_button_item_link {
+          @include d-flex(center, center, _, _);
+          border-radius: 4rem;
+          width: 15.4rem;
+          height: 4.8rem;
+        }
+        .header_navbar_button_item_link_contactUs {
+          @include font-style($--primary-color,1.2rem, 700, 1.4rem);
+          border: 2px solid $--primary-color;
+        }
+        .header_navbar_button_item_link_hydra {
+          @include font-style(#343045,1.2rem, 700, 1.4rem);
+          background-image: $--button-linear-gradient;
+        }
+      }
+
+      .header_navbar_icon {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    html{
+        font-size: 5px !important;
+    }
+    body{
+        font-size: 1.6rem !important;
+    }
+
+    .header_navbar_icon{
+        display: block !important;
+    }
+    .header_navbar_menu{
+        display: none !important;
+    }
+    .header_navbar_button{
+        display: none !important;
+    }
+  }
+
+
+}

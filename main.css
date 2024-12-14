@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: #302c42;
+  width: 100%;
+  height: 100vh;
+  padding: 5rem 8.4rem;
+}
+.container .header {
+  width: 100%;
+  margin-inline: auto;
+}
+.container .header .header_navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: _;
+  flex-wrap: _;
+}
+.container .header .header_navbar .header_navbar_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: _;
+  flex-wrap: _;
+  width: 19.3rem;
+}
+.container .header .header_navbar .header_navbar_logo .header_navbar_logo_img {
+  width: 10.2rem;
+  height: 10.3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .header .header_navbar .header_navbar_logo .header_navbar_logo_name {
+  width: 7.6rem;
+  height: 4.6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .header .header_navbar .header_navbar_menu {
+  width: 39rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: _;
+  flex-wrap: _;
+}
+.container .header .header_navbar .header_navbar_menu .header_navbar_menu_item .header_navbar_menu_item_link {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+}
+.container .header .header_navbar .header_navbar_button {
+  width: 34.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: _;
+  flex-wrap: _;
+}
+.container .header .header_navbar .header_navbar_button .header_navbar_button_item_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: _;
+  flex-wrap: _;
+  border-radius: 4rem;
+  width: 15.4rem;
+  height: 4.8rem;
+}
+.container .header .header_navbar .header_navbar_button .header_navbar_button_item_link_contactUs {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  border: 2px solid #ffffff;
+}
+.container .header .header_navbar .header_navbar_button .header_navbar_button_item_link_hydra {
+  color: #343045;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  background-image: linear-gradient(to right, #8176af, #c0b7e8);
+}
+.container .header .header_navbar .header_navbar_icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .container html {
+    font-size: 5px !important;
+  }
+  .container body {
+    font-size: 1.6rem !important;
+  }
+  .container .header_navbar_icon {
+    display: block !important;
+  }
+  .container .header_navbar_menu {
+    display: none !important;
+  }
+  .container .header_navbar_button {
+    display: none !important;
+  }
+}/*# sourceMappingURL=main.css.map */
