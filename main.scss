@@ -92,20 +92,20 @@ a {
 
   @media screen and (max-width:768px) {
     html{
-        font-size: 5px !important;
+        font-size: 5px !important;  /* important yazmasam işləmir */
     }
     body{
-        font-size: 1.6rem !important;
+        font-size: 1.6rem !important; /* important yazmasam işləmir */
     }
 
     .header_navbar_icon{
-        display: block !important;
+        display: block !important; /* important yazmasam işləmir */
     }
     .header_navbar_menu{
-        display: none !important;
+        display: none !important; /* important yazmasam işləmir */
     }
     .header_navbar_button{
-        display: none !important;
+        display: none !important; /* important yazmasam işləmir */
     }
   }
 

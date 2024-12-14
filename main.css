@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -111,18 +112,18 @@ a {
 }
 @media screen and (max-width: 768px) {
   .container html {
-    font-size: 5px !important;
+    font-size: 5px !important; /* important yazmasam işləmir */
   }
   .container body {
-    font-size: 1.6rem !important;
+    font-size: 1.6rem !important; /* important yazmasam işləmir */
   }
   .container .header_navbar_icon {
-    display: block !important;
+    display: block !important; /* important yazmasam işləmir */
   }
   .container .header_navbar_menu {
-    display: none !important;
+    display: none !important; /* important yazmasam işləmir */
   }
   .container .header_navbar_button {
-    display: none !important;
+    display: none !important; /* important yazmasam işləmir */
   }
 }/*# sourceMappingURL=main.css.map */
