@@ -1,6 +1,9 @@
 $--primary-color: #ffffff;
+$--secondary-color: #343045;
 
-$--button-linear-gradient: linear-gradient(to right, #8176af, #c0b7e8);
+
+$--button-linear-gradient: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
 $--radial-gradient: radial-gradient(#403a5f, #211e2e);
+$--radial-gradient_item: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
 
 $--text-linear-gradient: linear-gradient(to right, #C0B7E8, #8176AF);
