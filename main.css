@@ -1,10 +1,7 @@
 @charset "UTF-8";
 @media screen and (max-width: 768px) {
-  html {
+  html, body {
     font-size: 8px !important; /* important yazmasam işləmir */
-  }
-  body {
-    font-size: 1.6rem !important; /* important yazmasam işləmir */
   }
 }
 * {
@@ -531,5 +528,218 @@ a {
   }
   .main_cards .main_cards_item_one .main_cards_icon {
     display: block;
+  }
+}
+
+.main_tech {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6rem;
+  margin-top: 10rem;
+  flex-direction: column;
+  position: relative;
+}
+.main_tech .main_tech_image {
+  position: relative;
+  padding-block: 9rem;
+  width: 100%;
+  background: url("assets/img/tech_bg_image.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 9rem;
+  text-align: center;
+}
+.main_tech .main_tech_image .main_tech_image_title {
+  color: #ffffff;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 4.3rem;
+}
+.main_tech .main_tech_image .main_tech_image_name {
+  color: #ffffff;
+  font-size: 3.6rem;
+  font-weight: 300;
+  line-height: 4.3rem;
+}
+.main_tech .main_tech_image .main_tech_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(14, 14, 14, 0.3215686275);
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 4.6rem);
+  cursor: pointer;
+}
+.main_tech .main_tech_image .main_tech_icon .main_tech_icon_item {
+  border-radius: 50%;
+  font-size: 3rem;
+  color: #433D60;
+  padding: 2rem;
+  background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+}
+.main_tech .main_tech_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9rem;
+  flex-wrap: wrap;
+}
+.main_tech .main_tech_cards .main_tech_cards_icon {
+  display: none;
+}
+.main_tech .main_tech_cards .main_tech_cards_item_img:first-child {
+  max-width: 17.4rem;
+  max-height: 17.4rem;
+}
+.main_tech .main_tech_cards .main_tech_cards_item_img {
+  max-width: 25.2rem;
+  max-height: 25.2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .main_tech .main_tech_image .main_tech_icon {
+    display: none;
+  }
+  .main_tech .main_tech_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    text-align: center;
+  }
+  .main_tech .main_tech_cards .main_tech_cards_item_two,
+  .main_tech .main_tech_cards .main_tech_cards_item_three,
+  .main_tech .main_tech_cards .main_tech_cards_item_four {
+    display: none;
+  }
+  .main_tech .main_tech_cards .main_tech_cards_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    background-color: rgba(14, 14, 14, 0.3215686275);
+    border-radius: 50%;
+  }
+  .main_tech .main_tech_cards .main_tech_cards_icon .main_tech_cards_icon_img {
+    border-radius: 50%;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  }
+  .main_tech .main_tech_cards .main_tech_cards_left_icon {
+    left: 0;
+  }
+  .main_tech .main_tech_cards .main_tech_cards_right_icon {
+    right: 0;
+  }
+}
+
+.main_circleCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11rem;
+  flex-wrap: wrap;
+  margin-top: 9rem;
+}
+.main_circleCards .main_circleCards_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-direction: column;
+  position: relative;
+}
+.main_circleCards .main_circleCards_item .main_circleCards_item_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: 19.8rem;
+  height: 19.8rem;
+  border-radius: 50%;
+  background-color: rgba(13, 13, 13, 0.3215686275);
+}
+.main_circleCards .main_circleCards_item .main_circleCards_item_top .main_circleCards_item_top_number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
+  color: #343045;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 7.8rem;
+}
+.main_circleCards .main_circleCards_item .main_circleCards_item_bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+.main_circleCards .main_circleCards_item .main_circleCards_item_bottom .main_circleCards_item_bottom_icon {
+  display: none;
+}
+.main_circleCards .main_circleCards_item .main_circleCards_item_bottom .main_circleCards_item_bottom_right {
+  font-size: 3rem;
+  color: #C0B7E8;
+}
+.main_circleCards .main_circleCards_item .main_circleCards_item_bottom .main_circleCards_item_bottom_text .main_circleCards_item_bottom_text_title {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+}
+@media screen and (max-width: 768px) {
+  .main_circleCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .main_circleCards .main_circleCards_itemTwo,
+  .main_circleCards .main_circleCards_itemThree,
+  .main_circleCards .main_circleCards_itemFour {
+    display: none;
+  }
+  .main_circleCards .main_circleCards_item .main_circleCards_item_bottom .main_circleCards_item_bottom_icon {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    position: absolute;
+    border-radius: 50%;
+    width: 6.2rem;
+    height: 6.2rem;
+    background-color: rgba(14, 14, 14, 0.3215686275);
+  }
+  .main_circleCards .main_circleCards_item .main_circleCards_item_bottom .main_circleCards_item_bottom_icon i {
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #433D60;
+  }
+  .main_circleCards .main_circleCards_item .main_circleCards_item_bottom .main_circleCards_item_bottom_icon_left {
+    left: -2rem;
+  }
+  .main_circleCards .main_circleCards_item .main_circleCards_item_bottom .main_circleCards_item_bottom_icon_right {
+    right: -2rem;
   }
 }/*# sourceMappingURL=main.css.map */
