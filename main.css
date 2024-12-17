@@ -353,12 +353,16 @@ a {
   .main_introduction_and_build .main_introduction_and_build_text {
     display: none;
   }
-  .main_introduction_and_build .main_section_title_icon {
-    display: none;
+  .main_introduction_and_build .main_introduction_and_build_title {
+    width: 100%;
   }
-  .main_introduction_and_build .main_introduction_and_build_title_secondary {
+  .main_introduction_and_build .main_introduction_and_build_title .main_introduction_and_build_title_secondary {
+    width: 100%;
     margin-top: 1.6rem;
     flex-direction: column;
+  }
+  .main_introduction_and_build .main_introduction_and_build_title .main_introduction_and_build_title_secondary .main_section_title_icon {
+    display: none;
   }
 }
 
@@ -1027,6 +1031,9 @@ a {
     border: none;
     padding: 0;
     align-items: center;
+  }
+  .footer .footer_top .footer_top_about .footer_top_about_title {
+    text-align: center;
   }
   .footer .footer_top .footer_top_about .footer_top_about_media {
     flex-wrap: nowrap;
