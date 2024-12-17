@@ -277,6 +277,9 @@ a {
   .main_banner .main_banner_top .main_banner_top_text .main_banner_top_text_button .main_banner_top_text_button_link .main_banner_top_text_button_img {
     display: none;
   }
+  .main_banner .main_banner_top .main_banner_top_text .main_banner_top_text_button .main_banner_top_text_button_img {
+    display: none;
+  }
   .main_banner .main_banner_bottom {
     display: grid;
     grid-template-columns: 1fr;
