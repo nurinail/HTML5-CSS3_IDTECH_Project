@@ -1,7 +1,8 @@
-@mixin d-flex($align,$justify,$gap){
+@mixin d-flex($align,$justify,$direction,$gap){
     display: flex;
     align-items: $align;
     justify-content: $justify;
+    flex-direction: $direction;
     gap: $gap;
 }
 @mixin d-grid( $tm-columns,$gap){
